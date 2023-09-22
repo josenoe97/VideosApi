@@ -35,7 +35,7 @@ namespace VideosApi.Controllers
         [HttpGet]
         public IEnumerable<ReadVideoDto> GetVideo([FromQuery] int skip = 0, [FromQuery] int take = 50)
         {
-            return _mapper.Map<List<ReadVideoDto>>(_context.Videos.Skip(skip).Take(take));
+            return _mapper.Map<List<ReadVideoDto>>(_context.Videos.Skip(skip).Take(take).ToList());
         }
 
         [HttpGet("{id}")]
@@ -44,7 +44,7 @@ namespace VideosApi.Controllers
             var video = _context.Videos.FirstOrDefault(video =>
             video.Id == id);
 
-            if (video == null) return NotFound();
+            if (video == null) return NotFound("Não encontrado.");
 
             var videoDto = _mapper.Map<ReadVideoDto>(video);
 

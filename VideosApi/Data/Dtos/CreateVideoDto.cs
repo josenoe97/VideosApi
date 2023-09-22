@@ -12,5 +12,8 @@ namespace VideosApi.Data.Dtos
 
         [Required]
         public string Url { get; set; }
+
+        [Required]
+        public int CategoriaId { get; set; }
     }
 }

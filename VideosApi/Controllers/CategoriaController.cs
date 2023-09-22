@@ -41,10 +41,10 @@ namespace VideosApi.Controllers
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var categoria = _context.Videos.FirstOrDefault(categoria =>
+            var categoria = _context.Categorias.FirstOrDefault(categoria =>
             categoria.Id == id);
 
-            if (categoria == null) return NotFound();
+            if (categoria == null) return NotFound("Não encontrado.");
 
             var categoriaDto = _mapper.Map<ReadCategoriaDto>(categoria);
 
@@ -54,21 +54,21 @@ namespace VideosApi.Controllers
         [HttpPut("{id}")]
         public IActionResult PutById(int id, [FromBody] UpdateCategoriaDto dto)
         {
-            var categoria = _context.Videos.FirstOrDefault(categoria =>
+            var categoria = _context.Categorias.FirstOrDefault(categoria =>
             categoria.Id == id);
 
             if (categoria == null) return NotFound();
 
             _mapper.Map(dto, categoria);
             _context.SaveChanges();
-            return NoContent();
+            return Ok(dto);
         }
 
         [HttpPatch("{id}")]
         public IActionResult PatchById(int id,
             JsonPatchDocument<UpdateCategoriaDto> patch)
         {
-            var categoria = _context.Videos.FirstOrDefault(categoria =>
+            var categoria = _context.Categorias.FirstOrDefault(categoria =>
                 categoria.Id == id);
             if (categoria == null) return NotFound();
 
@@ -83,7 +83,7 @@ namespace VideosApi.Controllers
 
             _mapper.Map(categoriaToUpdate, categoria);
             _context.SaveChanges();
-            return NoContent();
+            return Ok(categoriaToUpdate);
         }
 
         [HttpDelete("{id}")]
@@ -91,12 +91,12 @@ namespace VideosApi.Controllers
         {
             var categoria = _context.Categorias.FirstOrDefault(categoria =>
                 categoria.Id == id);
-            if (categoria == null) return NotFound();
+            if (categoria == null) return NotFound("Não foi possivel deletar.");
 
             _context.Remove(categoria);
             _context.SaveChanges();
 
-            return NoContent();
+            return Ok("Foi deletado com exito.");
         }
     }
 }
