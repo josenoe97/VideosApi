@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\New folder\\VideosApi\\VideosApi\\VideosApi.csproj": {}
+    "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\AluraChallenger\\VideosApi\\VideosApi\\VideosApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\New folder\\VideosApi\\VideosApi\\VideosApi.csproj": {
+    "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\AluraChallenger\\VideosApi\\VideosApi\\VideosApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\New folder\\VideosApi\\VideosApi\\VideosApi.csproj",
+        "projectUniqueName": "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\AluraChallenger\\VideosApi\\VideosApi\\VideosApi.csproj",
         "projectName": "VideosApi",
-        "projectPath": "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\New folder\\VideosApi\\VideosApi\\VideosApi.csproj",
+        "projectPath": "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\AluraChallenger\\VideosApi\\VideosApi\\VideosApi.csproj",
         "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\New folder\\VideosApi\\VideosApi\\obj\\",
+        "outputPath": "C:\\Users\\edson\\OneDrive\\Área de Trabalho\\Alura\\AluraChallenger\\VideosApi\\VideosApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

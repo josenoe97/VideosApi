@@ -16,5 +16,9 @@ namespace VideosApi.Models
 
         [Required]
         public string Url { get; set; }
+
+        public int CategoriaId { get; set; }
+
+        public virtual Categoria Categoria { get; set; }
     }
 }
