@@ -33,9 +33,11 @@ namespace VideosApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<ReadVideoDto> GetVideo([FromQuery] int skip = 0, [FromQuery] int take = 50)
+        public IEnumerable<ReadVideoDto> GetVideo([FromQuery] int page)
         {
-            return _mapper.Map<List<ReadVideoDto>>(_context.Videos.Skip(skip).Take(take).ToList());
+            var skip = page * 5;  // Page pular 5 em 5 video por pagina
+
+                return _mapper.Map<List<ReadVideoDto>>(_context.Videos.Skip(skip).Take(5).ToList());
         }
 
         [HttpGet("{id}")]

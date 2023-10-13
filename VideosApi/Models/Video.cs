@@ -12,6 +12,7 @@ namespace VideosApi.Models
         public string Titulo { get; set; }
 
         [Required]
+        [StringLength(100, MinimumLength = 10, ErrorMessage = "Nome deve ter entre 10 e 100 caracteres!")]
         public string Descricao { get; set; }
 
         [Required]
