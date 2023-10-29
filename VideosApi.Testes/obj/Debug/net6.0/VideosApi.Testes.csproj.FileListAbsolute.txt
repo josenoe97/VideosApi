@@ -25,7 +25,6 @@ C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\Videos
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
@@ -130,3 +129,10 @@ C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\Videos
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\obj\Debug\net6.0\VideosApi.Testes.pdb
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\obj\Debug\net6.0\VideosApi.Testes.genruntimeconfig.cache
 C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\obj\Debug\net6.0\ref\VideosApi.Testes.dll
+C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\edson\OneDrive\Área de Trabalho\Alura\AluraChallenger\VideosApi\VideosApi.Testes\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll

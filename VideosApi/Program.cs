@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using VideosApi.Data;
+using VideosApi.Models;
+using VideosApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,16 @@ var connectionString = builder.Configuration.GetConnectionString("VideoConnectio
 
 builder.Services.AddDbContext<VideoContext>(opts => 
     opts.UseLazyLoadingProxies().UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+builder.Services.AddIdentity<Usuario, IdentityRole>()
+    .AddEntityFrameworkStores<VideoContext>()
+    .AddDefaultTokenProviders();
+
+// AddScoped AddTransient AddSingleton // 
+
+builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<TokenService>();
+
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
