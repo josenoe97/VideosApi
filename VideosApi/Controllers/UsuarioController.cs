@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using VideosApi.Data.Dtos;
@@ -9,14 +10,14 @@ namespace VideosApi.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
-    
+
     public class UsuarioController : ControllerBase
     {
         private readonly UsuarioService _usuarioService;
 
-        public UsuarioController(UsuarioService cadastroService)
+        public UsuarioController(UsuarioService usuarioService)
         {
-            _usuarioService = cadastroService;
+            _usuarioService = usuarioService;
         }
 
         [HttpPost("cadastro")]
@@ -26,10 +27,15 @@ namespace VideosApi.Controllers
             return Ok("Usuário cadastrado!");
         }
 
+        [AllowAnonymous]
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginUsuarioDto dto)
         {
             var token = await _usuarioService.LoginAsync(dto);
+
+            if (token is null)
+                return BadRequest("Usuário e senha inválidos");
+
             return Ok(token);
         }
 

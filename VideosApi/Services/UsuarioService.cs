@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
+using System.IdentityModel.Tokens.Jwt;
 using VideosApi.Data.Dtos;
 using VideosApi.Models;
 
@@ -41,7 +42,7 @@ namespace VideosApi.Services
             var resultado = await _signInManager.PasswordSignInAsync(dto.Username, dto.Password, false, false);
 
             if (!resultado.Succeeded)
-                throw new ApplicationException("Usuário não autenticado!");
+                throw new ApplicationException("Usuário e senha inválidos");
 
             var usuario = _signInManager
                 .UserManager
